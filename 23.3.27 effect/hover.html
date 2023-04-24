@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{ 
+            width: 200px;
+            height: 200px;
+            background: bisque;
+            margin-top: 200px;
+            float: left;
+        }
+        .box:hover{
+            width: 400px;
+            background: rebeccapurple;
+            margin-top: 0;
+            border: 1px solid;
+            transition: 10s;
+        */
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background: bisque;
+        }
+        .box:hover{
+            width: 400px;
+            background: rebeccapurple;
+            margin-left: 200px;
+        }
+        
+        /* .box2{ 
+            width: 200px;
+            height: 200px;
+            float: left;  
+            background: coral;      
+            margin: 200px;
+        }
+        .box2:hover{
+            display: none;
+            background: transparent;
+            transition: 10s;
+        }
+        */
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            margin-top: 30px;
+            background: coral;
+        }
+
+        .box2:hover{
+            /* display: none;  */
+             /* width: 0;  */
+            opacity: 0; 
+            /* visibility: hidden; */
+        }
+        .box3{
+            background: darkblue;
+            margin-top: 60px;
+            width: 200px;
+            height: 200px;
+            
+        }
+        .box3:hover{
+            background: rgb(26, 108, 108);
+            /* width: 300px; 
+            height: 300px;*/
+            transform: rotate(180deg)scale(1.5);
+            transition: 4s;
+        }
+
+        .box4{
+            width: 200px;
+            height: 200px;
+            background: darkviolet;
+            margin-top: 80px;
+        }
+        .box4:hover{
+            background: deeppink;
+            /* margin-left: 200px; */
+            border-radius: 50%;
+            transform:  translateX(200px) rotate(180deg);
+            /* rotate đứng trước translate thì sẽ không lăn sang phải, mà chỉ lăn tại chỗ
+            rotate chỉ lăn khi đứng sau translatex */
+            /* transition-duration: 4s; */
+            transition: 4s;
+        }
+
+        .out{
+            height: 300px;
+            border: 1px solid ;
+            
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            transition: 4s;
+           
+        }
+        .out:hover .box5{
+            border-radius: 50%;
+            transform: translateX(200px) rotate(180deg);
+            
+        }
+
+        .box6{
+            height: 200px;
+            width: 200px;
+            top: 700px;
+            background: yellow;
+        }
+        .box6:hover{
+            transform: translate(100px) rotate(70deg);
+            border-radius: 30%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Khi hover len thì dịch phải 200px
+        Thêm 1 div class là box 2, khi hover lên thì biến mất 
+    -->
+    <div class="box"></div>
+    <div class="box2"></div>
+
+    <!-- Transition & transform
+        Khi hover lên thì box xoay 180 độ, to lên 1,5 lần. 
+        Quá trình diễn ra trong 4s
+    -->
+    <div class="box3"></div>
+
+    <!-- Transition & transform
+        Khi hover lên thì chuyển dần thành hình tròn và lăn sang phải 200px;
+    -->
+    <div class="box4"></div>
+    <!-- Con chuột bị thay đổi vị trí khi thêm hover, do đó để khắc phục
+        thì phải đặt thẻ div này nằm trong 1 thẻ div khác 
+        VÀ ĐÂY CŨNG LÀ CÁCH HOVER THƯỜNG DÙNG KHI CODE 
+    -->
+    <div class="out">
+        <div class="box5"></div>
+    </div>
+
+    <div class="box6"></div>
+</body>
+</html>

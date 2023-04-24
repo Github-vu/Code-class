@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 300px;
+      height: 500px;
+      background: yellow;
+    }
+    .red {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: fixed;
+      position: absolute;
+      left: 200px;
+    }
+    .blue {
+      width: 100px;
+      height: 100px;
+      background: blue;
+      position: absolute;
+      position: relative;
+      top: 320px;
+      left: 300px;
+      position:static;
+    }
+  </style>
+  <body>
+    <!-- + parent tag: thẻ mở đầu/thẻ ngoài
+         + child: thẻ nằm trong  
+    -->
+     <!-- + static: không phụ thuộc vào top-lèt-right-bottom, mặc định  
+          + static: không phụ thuộc vào top-left-right-bottom, mặc định
+        Tag có thể thay đổi top-left-right-bottom
+          + fixed: ở vị trí khi lăn chuột 
+          + absolute: xác định vị trí thẻ cha
+          + relative: xác định vị trí theo vị trí mặc định 
+        -->
+    <!--  + text-align: center chiều ngang
+          + line -heigh: px chiều dọc  -->
+    <div>
+      <div class="red"></div>
+      <div class="blue"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.main{
+    width: 100%;
+    margin-top: 20px;
+    height: 700px;
+}
+.main-left{
+    width: 20%;
+    background: bisque;
+    height: 700px;
+    float: left;
+}
+.main-left a{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+.main-mid{
+    width: calc(60% );
+    background: rgb(241, 205, 161);
+    height: 700px;
+    float: left;
+}
+.mid-top{
+    height: 300px;
+}
+.mid-bot{
+    height: 300px;
+    margin-top: 20px;
+}
+.main-right{
+    width: 20%;
+    background: rgb(239, 165, 74);
+    height: 700px;
+    float: left;
+}

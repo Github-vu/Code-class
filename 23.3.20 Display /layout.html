@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<style>
+    html,body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+    }
+    a{
+        display: block;
+    }
+    .b{
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+        background: red;
+    }
+    a.b{
+        background: rgb(104, 234, 154);
+    }
+</style>
+<!-- display: set rule for a tag  -->
+<!-- 
+    + inline: qui định chiều ngang của thẻ chỉ vừa bằng nội dung - nằm trên cùng 1 dòng (span, a, lable), 
+    KHÔNG qui định được width & height
+    + block: qui định chiều ngang của thẻ là cả màn hình - tự xuống dòng (div, h, p) 
+    QUI ĐỊNH ĐƯỢC width & height
+    + inline -block: vừa có thể hiển thị trên cùng dòng như inline 
+                     lại có thể căn chỉnh được các giá trị như đã nêu ở trên giống như block (img)
+    + mỗi thẻ thì có sẵn display mặc định và có thể thay đổi được
+ -->
+<body>
+<a href="./">Day la the a thu 1 </a>
+<a href="./">Day la the a thu 2 </a>
+<br><hr>
+<div class="b">Day la the div</div>
+<a class="b" href="">Day la the a thu 3 </a>
+<p class="b">day la the p</p>
+
+</body>
+</html>

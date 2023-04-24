@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(5, 7%) auto 7%;
+      background: antiquewhite;
+      grid-gap: 10px;
+    }
+    .item {
+      line-height: 50px;
+      height: 50px;
+    }
+    .main {
+      display: grid;
+      grid-template-columns: 20% auto 20%;
+      background: blanchedalmond;
+      height: 700px;
+      margin: 10px;
+    }
+    .main_left {
+      display: grid;
+    }
+
+    .box {
+      border: 1px solid black;
+      height: 300px;
+      margin: 10px;
+    }
+
+    .main_mid_top {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 10px;
+      margin: 10px;
+    }
+    .hotnews {
+      line-height: 200px;
+      height: 200px;
+      border: 1px solid rgb(223, 84, 84);
+      text-align: center;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 10px;
+      margin: 10px;
+    }
+    .new {
+      height: 200px;
+      line-height: 200px;
+      border: 1px solid rgb(200, 182, 18);
+      text-align: center;
+    }
+    .main_right {
+      display: grid;
+    }
+
+    .box_right {
+      border: 1px solid black;
+      height: 200px;
+      margin: 10px;
+    }
+    .footer {
+      display: grid;
+      grid-template-columns: 7% auto repeat(5, 7%);
+      background: antiquewhite;
+      grid-gap: 10px;
+      margin: 10px;
+      overflow: auto;
+    }
+    .item {
+      line-height: 50px;
+      height: 50px;
+    }
+  </style>
+  <body>
+    <div class="nav">
+      <div class="item">Logo</div>
+      <div class="item">Home</div>
+      <div class="item">About</div>
+      <div class="item">Service</div>
+      <div class="item">Blog</div>
+      <div></div>
+      <div class="item">Login</div>
+    </div>
+    <div class="main">
+      <div class="main_left">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="main_mid">
+        <div class="main_mid_top">
+          <div class="hotnews">Hotnews</div>
+          <div class="hotnews">Photo Slides</div>
+        </div>
+        <div class="list">
+          <div class="new">News</div>
+          <div class="new">News</div>
+          <div class="new">News</div>
+          <div class="new">News</div>
+          <div class="new">News</div>
+          <div class="new">News</div>
+        </div>
+      </div>
+      <div class="main_right">
+        <div class="box_right"></div>
+        <div class="box_right"></div>
+        <div class="box_right"></div>
+      </div>
+    </div>
+      <div class="footer">
+        <div class="item">2012@Tap chi lap trinh</div>
+        <div></div>
+        <div class="item">Logo</div>
+        <div class="item">Home</div>
+        <div class="item">About</div>
+        <div class="item">Service</div>
+        <div class="item">Blog</div>
+      </div>
+    
+  </body>
+</html>

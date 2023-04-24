@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-size: large;
+    }
+    h1, div, h2{
+        color: red;
+    }
+    /* Css combinator: dau phay (,) dung de select tat ca cac phan tu con chau cua tag parent */
+    div p{
+        color: aqua;
+    }
+    /* Css combinator: dau cach, dung de select tat ca cac the P trong the DIV, 
+    bao gom ca the con & the chau  */
+    div>p{
+        font-style: italic;
+        font-weight: lighter;
+        font-size: xx-large;
+    }
+    /* CSS combinator: dau lon hon (>), dung qui dinh cac THE CON LIEN KE the DIV */
+</style>
+<body>
+    
+    <h1>Hello</h1>
+    <div>Hihi</div>
+    <h2>Haha</h2><hr>
+    <div>
+        <p>EFFECT A</p>
+        <p>EFFECT B</p>
+        <h1>
+            <p>EFFECT C</p>
+            <span>EFFECT D</span>
+        </h1>
+    </div>
+    <p>EFFECT E</p>
+    <div>
+        <p>EFFECT F</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+.head,
+.menu,
+.main,
+.footer {
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.head {
+    height: 150px;
+    border: 0;
+}
+
+.head_logo {
+    width: 30%;
+    margin-right: 10px;
+    height: 150px;
+    border: 1px solid;
+    float: left;
+}
+
+.head_banner {
+    width: calc(100% - 30% - 14px);
+    height: 150px;
+    border: 1px solid;
+    float: left;
+}
+
+.menu {
+    height: 50px;
+}
+
+.main {
+    height: 600px;
+    border: 0;
+}
+
+.main_left {
+    width: 15%;
+    float: left;
+    height: 600px;
+    margin-right: 10px;
+}
+
+
+.main_left_top {
+    width: 100%;
+    height: 200px;
+    border: 1px solid;
+}
+
+.main_left_bot {
+    width: 100%;
+    height: 300px;
+    border: 1px solid;
+    margin-top: 10px;
+}
+
+.main_mid {
+    width: calc(100% - 15% - 25% - 26px);
+    float: left;
+    height: 600px;
+    margin-right: 10px;
+}
+
+.main_mid_top {
+    width: 100%;
+    height: 150px;
+}
+
+.news {
+    width: calc(50% - 12px);
+    height: 150px;
+    margin: 5px;
+    border: 1px solid;
+    float: left;
+}
+
+.main_mid_bot {
+    width: 100%;
+    height: 310px;
+    margin-top: 10px;
+}
+
+.item {
+    width: calc(33.3% - 12px);
+    height: 150px;
+    margin: 5px;
+    border: 1px solid;
+    float: left;
+}
+
+.main_right {
+    width: 25%;
+    float: left;
+    height: 600px;
+    border: 1px solid;
+}
+
+.footer {
+    height: 50px;
+    position: fixed;
+    background: cadetblue;
+    bottom: opx;
+    left: opx;
+}
+
+/* de fix footer luôn ở cuối trang có thể dùng potision: fixed */
+/* float: các div trên 1 hàng => tổng width < 100% */
+/* 100%+1px>100% */
+
+@media only screen and (max-width:1200px) {
+    .main_left {
+        display: none;
+    }
+
+
+    .main_mid {
+        width: calc(100% - 35% - 14px);
+    }
+
+    .main_right {
+        width: 35%;
+    }
+
+}
+
+/* @media only screen and (max-width:1000px) { 
+    .main_left {
+        display: none;
+    }
+
+    .main_mid {
+        width: calc(100%);
+    }
+
+    .main_right {
+        display: none;
+    }
+
+}*/
+
+@media only screen and (max-width:1000px) {
+    .main_mid {
+        width: 100%;
+    }
+
+    .main_right {
+        display: none;
+    }
+
+    /* vi duoi 1200 main_left da tu dong mat, nen khong can de main_left trong truong hop nay */
+}
+
+/*  
+@media only screen and (max-width:800px) {
+    .main_left {
+        display: none;
+    }
+
+    .news{
+        width: calc(100%);
+    }
+   
+    .item{
+        width: calc(100% );
+    }
+    
+    .main_right {
+        display: none;
+    }
+
+    .main_mid_bot{
+        overflow: auto;
+    }
+}
+*/
+
+@media only screen and (max-width:800px) {
+    .item {
+        width: calc(50% - 12px);
+    }
+}
+
+/*  
+@media only screen and (max-width:600px) {
+    .main_left {
+        display: none;
+    }
+
+    .news {
+        width: calc(100%);
+    }
+
+    .item {
+        width: calc(100%);
+    }
+
+    .main_right {
+        display: none;
+    }
+
+    .main_mid_bot {
+        overflow: auto;
+    }
+}
+*/
+
+@media only screen and (max-width:600px) {
+    .item {
+        width: calc(100% - 12px);
+    }
+}
+
+/* 
+Dưới 1200: mất margin-left
+Duoi 1000: mat phan margin-right
+Duoi 800: 2 item 1 hang
+Duoi 600: 1 item 1 hang
+ */
+
+/* Để đẩy footer xuống dưới có thể sử dụng overflow: auto , 
+ hoặc cố định footer bằng position: fixed*/

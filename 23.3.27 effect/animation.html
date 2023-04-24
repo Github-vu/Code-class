@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        animation: name 3s; /* name here can be anything,but need to be same with the name in keyframes*/
+        /* animation-iteration-count: inherit; */
+        /* animation-iteration-count: initial; */
+        /* animation-direction: alternate; */
+      }
+      @keyframes name {
+        0% {
+          background-color: rgb(46, 213, 57);
+        }
+        50% {
+          background: rgb(215, 131, 75);
+          opacity: 0;
+        }
+        75% {
+          background: rgb(purple);
+        }
+        100% {
+          background-color: red;
+        }
+        /* muốn nhiều màu thì chia nhỏ các phần trăm và thêm màu */
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background: darkcyan;
+        margin-top: 20px;
+        animation: ten 4s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes ten {
+        0% {
+          border-radius: 0;
+        }
+
+        50% {
+          border-radius: 50%;
+          background: yellow;
+          margin-left: calc(100% - 200px);
+        }
+
+        100% {
+          border-radius: 0;
+        }
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background: crimson;
+        animation: box3 3s;
+        border-radius: 50%;
+        margin-top: 40px;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes box3 {
+        0% {
+        }
+        25% {
+          background: yellow;
+          transform: translateX(1200px);
+        }
+        50% {
+          background: rgb(12, 218, 87);
+          transform: translate(1200px, 500px);
+        }
+        75% {
+          background: rgb(51, 0, 255);
+          transform: translate(0px, 500px);
+        }
+        100% {
+          transform: translate(0px, 0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <!-- Di chuyển từ trái sang phải và quay về -->
+    <div class="box2"></div>
+
+    <!-- Di chuyen 4 canh, trai phai xuong duoi & len tren -->
+    <div class="box3"></div>
+  </body>
+</html>
